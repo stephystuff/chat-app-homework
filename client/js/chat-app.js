@@ -24,6 +24,7 @@ console.log('wyd');
     })
     .done(function handleMessageSuccess(data){
       userToken = data.token;
+      $('.login').hide();
       console.log('Let\'s Chat!', userToken);
     })
     .fail(function handleMessageFailure(xhr){
@@ -50,5 +51,5 @@ console.log('wyd');
       console.log('try again!');
     })
   });
-  
+
 }());
